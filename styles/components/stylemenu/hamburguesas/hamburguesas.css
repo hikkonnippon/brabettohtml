@@ -1,0 +1,333 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  font-family: "brabettoheavy";
+}
+
+/*ENCABEZADO LLAMAR*/
+.call_line {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 0px;
+  gap: 5px;
+}
+
+/* ENCABEZADO PRINCIPAL*/
+.mainbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.mainbar-elements {
+  background-color: var(--yellowbb);
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 10px;
+}
+.mainbar-elements-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 2rem;
+  gap: 2rem;
+  height: 10px;
+}
+.mainbar-elements-right a {
+  text-decoration: none;
+  color: inherit;
+}
+.mainbar-elements-right-delivery {
+  display: flex;
+  align-items: center;
+}
+.mainbar-elements-right-delivery-info {
+  margin-left: 5px;
+  display: block;
+}
+.mainbar-elements-right-delivery-info-city {
+  display: flex;
+}
+.mainbar-elements-right-delivery-info-city select {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  font-size: 12px;
+  outline: 0;
+  font-family: brabettobold;
+  margin-left: 10px;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.mainbar-elements-right-delivery-info-city select option {
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+.mainbar-elements-right-delivery-info-phone {
+  margin: 0;
+  text-align: left;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.navi {
+  height: 8vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 5.4px 3.6px rgba(0, 0, 0, 0.012), 0px 13.2px 10px rgba(0, 0, 0, 0.018), 0px 26.6px 24.1px rgba(0, 0, 0, 0.023), 0px 62px 80px rgba(0, 0, 0, 0.03);
+}
+.navi-menu {
+  background-color: transparent;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}
+.navi-menu a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  height: 8vh;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+.navi-menu a span {
+  vertical-align: middle;
+}
+.navi-menu a:hover {
+  cursor: pointer;
+}
+.navi-menu a:hover span {
+  border-bottom: 4px solid var(--greenbb);
+}
+.navi-cart {
+  position: relative;
+  margin: 0;
+  padding-left: 50px;
+}
+.navi-cart-button {
+  margin: auto;
+  height: 40px;
+  padding: 10px;
+  width: 140px;
+  color: #f2762e;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border: solid #f2762e 2px;
+  box-shadow: none;
+  border-radius: 50px;
+  transition: 284ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.navi-cart-button i {
+  padding-left: 16px;
+}
+.navi-cart-button:hover {
+  transition: 284ms;
+  padding: 10px 31px;
+  transform: translateY(0px);
+  background-color: #F2762E;
+  color: #ffffff;
+  border: solid 2px #F2762E;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: var(--orangebb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: brabettobold;
+}
+
+.socialmedia {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 48px;
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.socialmedia a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainfooter {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 12px;
+  width: 90%;
+}
+.mainfooter-center {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
+.mainfooter-center .pol {
+  border-right: 1px solid white;
+  padding-right: 40px;
+}
+
+:root {
+  --greenbb: #5DBF4E;
+  --yellowbb: #F2A516;
+  --brownbb: #733702;
+  --orangebb: #F2762E;
+  --redbb: #F22727;
+}
+
+@font-face {
+  font-family: "brabettoheavy";
+  src: url(../../resources/BrabettoFontHeavy.ttf);
+}
+@font-face {
+  font-family: "brabettobold";
+  src: url(../../resources/BrabettoFontBold.ttf);
+}
+header {
+  grid-area: header;
+}
+
+.menubar {
+  grid-area: menubar;
+}
+
+.mainpage {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-areas: "header" "menubar" "main" "footer";
+}
+
+::-webkit-scrollbar {
+  width: 1.5vh;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 3vh;
+}
+
+@font-face {
+  font-family: "brabettoheavy";
+  src: url(/resources/BrabettoFontHeavy.ttf);
+}
+@font-face {
+  font-family: "brabettobold";
+  src: url(/resources/BrabettoFontBold.ttf);
+}
+.mainpage {
+  background-color: transparent;
+  margin-top: 13%;
+}
+.mainpage-navbar {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin-bottom: 3%;
+}
+.mainpage-navbar-list {
+  font-family: brabettobold;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 10px #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+  list-style: none;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mainpage-navbar-list a {
+  text-decoration: none;
+  color: inherit;
+}
+.mainpage-menu {
+  margin-bottom: 5%;
+}
+.mainpage-menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.mainpage-menu-section-elements {
+  display: flex;
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 24px;
+  height: 300px;
+  width: 70%;
+}
+.mainpage-menu-section-elements-img {
+  position: relative;
+  height: 100%;
+}
+.mainpage-menu-section-elements-img img {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  width: 450px;
+  height: 100%;
+}
+.mainpage-menu-section-elements-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.mainpage-menu-section-elements-info h2 {
+  font-family: brabettoheavy;
+}
+.mainpage-menu-section-elements-info p {
+  font-family: brabettobold;
+}/*# sourceMappingURL=hamburguesas.css.map */

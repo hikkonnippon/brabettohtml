@@ -1,0 +1,13 @@
+@import "../header";
+@import "../footer";
+@import "../../config/variables";
+@import "../../base/base";
+
+@font-face {
+    font-family:"brabettoheavy";
+    src:url(../../../resources/BrabettoFontHeavy.ttf);
+}
+@font-face {
+    font-family:"brabettobold";
+    src:url(../../../resources/BrabettoFontBold.ttf);
+}

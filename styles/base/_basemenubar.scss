@@ -1,0 +1,39 @@
+header {
+    grid-area: header;
+}
+.menubar{
+    grid-area: menubar;
+}
+
+.mainpage {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas:"header" "menubar" "main" "footer";
+    
+}
+
+::-webkit-scrollbar {
+    width: 1.5vh;
+
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar:hover {
+    width: 3vh;
+}

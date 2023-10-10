@@ -7,6 +7,15 @@
 
 @import "./components/stylemenu/menupage.scss";
 
+@font-face {
+    font-family:"brabettoheavy";
+    src:url(/resources/BrabettoFontHeavy.ttf);
+}
+@font-face {
+    font-family:"brabettobold";
+    src:url(/resources/BrabettoFontBold.ttf);
+}
+
 body{
     margin: 0;
 }

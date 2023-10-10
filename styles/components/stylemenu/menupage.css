@@ -344,7 +344,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/images/comboburger.png);
+  background-image: url(../../../images/comboburger.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

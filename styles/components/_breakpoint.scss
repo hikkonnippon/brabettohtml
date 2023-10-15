@@ -61,5 +61,36 @@
             }
         }
     } 
+    .mainpage{
+        display: block;
+        &-cover{
+            display: flex;
+            flex-wrap: wrap;
+            &-right{
+                width: 100%;
+            }
+        }
+        &-promos{
+            &-section{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 50px;
+            }
+        }
+        &-app{
+            div{
+                display: none;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    footer{
+        .mainfooter{
+            display: none;
+        }
+    }
+
     
 }

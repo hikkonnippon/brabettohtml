@@ -334,6 +334,9 @@ body {
     flex-wrap: wrap;
     gap: 50px;
   }
+  .mainpage-promos-section-card-info p {
+    line-height: 1.5;
+  }
   .mainpage-app div {
     display: none;
   }

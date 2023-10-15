@@ -1,40 +1,5 @@
 @charset "UTF-8";
 header {
-  grid-area: header;
-}
-
-.mainpage {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-}
-
-body {
-  margin: 0;
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-}
-
-::-webkit-scrollbar {
-  width: 1.5vh;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #c0c0c0;
-  border-radius: 30px;
-}
-
-::-webkit-scrollbar:hover {
-  width: 3vh;
-}
-
-header {
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -194,196 +159,6 @@ header {
   border: solid 2px #F2762E;
 }
 
-.mainpage {
-  background-color: transparent;
-  display: grid;
-  grid-template-areas: "cover" "promociones" "pedidosya";
-  margin-top: 15%;
-  z-index: 50;
-  width: 100%;
-}
-.mainpage-cover {
-  grid-area: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 400px;
-  width: 100%;
-  font-family: brabettoheavy;
-}
-.mainpage-cover-left {
-  width: 400px;
-}
-.mainpage-cover-right {
-  font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.mainpage-cover-right img {
-  height: 100px;
-  width: 300px;
-  padding: 20px;
-  padding-top: 30px;
-}
-.mainpage-cover-right span {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}
-.mainpage-cover-right a {
-  text-decoration: none;
-  color: inherit;
-}
-.mainpage-cover-right button {
-  margin: auto;
-  height: 80px;
-  padding: 10px;
-  width: 300px;
-  color: #ffffff;
-  background-color: #F22727;
-  padding: 10px 0px;
-  border: solid #F22727 4px;
-  box-shadow: none;
-  border-radius: 50px;
-  transition: 284ms;
-  transform: translateY(0);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  font-size: 24px;
-  justify-content: center;
-  font-family: brabettoheavy;
-}
-.mainpage-cover-right button:hover {
-  transition: 284ms;
-  padding: 10px 31px;
-  transform: translateY(0px);
-  background-color: #ffffff;
-  color: #F22727;
-  border: solid 4px #F22727;
-}
-.mainpage-promos {
-  grid-area: promociones;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 100%;
-}
-.mainpage-promos-title {
-  font-family: brabettoheavy;
-  font-size: 40px;
-  align-items: center;
-  margin-left: 15%;
-  width: 80%;
-}
-.mainpage-promos-title span {
-  border-bottom: 5px solid black;
-}
-.mainpage-promos-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 50px;
-  margin-right: 10%;
-  margin-left: 10%;
-  height: 100%;
-}
-.mainpage-promos-section-cumple {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  border-radius: 25px;
-  background-color: #ffffff;
-  border: 1px solid rgb(177, 177, 177);
-}
-.mainpage-promos-section-cumple img {
-  height: 50%;
-  width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
-.mainpage-promos-section-cumple-info {
-  height: 50%;
-  margin: 50px;
-}
-.mainpage-promos-section-cumple-info span {
-  font-family: brabettoheavy;
-  font-size: 24px;
-}
-.mainpage-promos-section-cumple-info p {
-  font-family: brabettobold;
-}
-.mainpage-promos-section-cumple:hover {
-  cursor: pointer;
-  transform: translateY(-20px);
-  transition: transform 0.3s ease;
-  box-shadow: 0px 0.7px 2.2px rgba(0, 0, 0, 0.025), 0px 1.7px 5.3px rgba(0, 0, 0, 0.036), 0px 3.3px 10px rgba(0, 0, 0, 0.045), 0px 5.8px 17.9px rgba(0, 0, 0, 0.054), 0px 10.9px 33.4px rgba(0, 0, 0, 0.065), 0px 26px 80px rgba(0, 0, 0, 0.09);
-}
-.mainpage-promos-section-giftcard {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  border-radius: 25px;
-  background-color: #ffffff;
-  border: 1px solid rgb(177, 177, 177);
-}
-.mainpage-promos-section-giftcard img {
-  height: 50%;
-  width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
-.mainpage-promos-section-giftcard-info {
-  height: 50%;
-  margin: 50px;
-}
-.mainpage-promos-section-giftcard-info span {
-  font-family: brabettoheavy;
-  font-size: 24px;
-}
-.mainpage-promos-section-giftcard-info p {
-  font-family: brabettobold;
-}
-.mainpage-promos-section-giftcard:hover {
-  cursor: pointer;
-  transform: translateY(-20px);
-  transition: transform 0.3s ease;
-  box-shadow: 0px 0.7px 2.2px rgba(0, 0, 0, 0.025), 0px 1.7px 5.3px rgba(0, 0, 0, 0.036), 0px 3.3px 10px rgba(0, 0, 0, 0.045), 0px 5.8px 17.9px rgba(0, 0, 0, 0.054), 0px 10.9px 33.4px rgba(0, 0, 0, 0.065), 0px 26px 80px rgba(0, 0, 0, 0.09);
-}
-.mainpage-app {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  font-family: brabettoheavy;
-  height: 450px;
-  text-align: center;
-  font-size: 32px;
-}
-.mainpage-app-left {
-  width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mainpage-app-left img {
-  width: 200px;
-}
-.mainpage-app-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 600px;
-}
-.mainpage-app-right img {
-  width: 200px;
-}
-
 footer {
   width: 100%;
   height: 150px;
@@ -444,14 +219,172 @@ footer {
   font-family: "brabettobold";
   src: url(../../resources/BrabettoFontBold.ttf);
 }
+header {
+  grid-area: header;
+}
+
+.mainpage {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+}
+
+::-webkit-scrollbar {
+  width: 1.5vh;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 3vh;
+}
+
+@media (min-width: 481px) {
+  .mobileheader {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    display: none;
+  }
+  .mobileheader-call_line {
+    width: 5%;
+  }
+}
 @font-face {
   font-family: "brabettoheavy";
-  src: url(../resources/BrabettoFontHeavy.ttf);
+  src: url(../../../resources/BrabettoFontHeavy.ttf);
 }
 @font-face {
   font-family: "brabettobold";
-  src: url(../resources/BrabettoFontBold.ttf);
+  src: url(../../../resources/BrabettoFontBold.ttf);
 }
-body {
+.mainpage {
+  background-color: transparent;
+  margin-top: 15%;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainpage-cover {
+  display: flex;
+  justify-content: center;
+}
+.mainpage-cover-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainpage-cover-right img {
+  height: 30%;
+}
+.mainpage-cover-right span {
+  font-family: brabettoheavy;
+  font-size: 42px;
+  text-align: center;
+}
+.mainpage-cover-right button {
+  height: 80px;
+  padding: 10px;
+  width: 300px;
+  color: #ffffff;
+  background-color: #F22727;
+  padding: 10px 0px;
+  border: solid #F22727 4px;
+  box-shadow: none;
+  border-radius: 50px;
+  transition: 284ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  justify-content: center;
+  font-family: brabettoheavy;
+}
+.mainpage-cover-right button:hover {
+  transition: 284ms;
+  padding: 10px 31px;
+  transform: translateY(0px);
+  background-color: #ffffff;
+  color: #F22727;
+  border: solid 4px #F22727;
+}
+.mainpage-promos {
+  margin-top: 7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 660px;
+}
+.mainpage-promos-title {
+  border-bottom: 6px solid black;
+  font-family: brabettoheavy;
+  font-size: 40px;
+}
+.mainpage-promos-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.mainpage-promos-section-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 40px;
+  border: 1px solid rgb(177, 177, 177);
+}
+.mainpage-promos-section-card-image {
+  height: 50%;
+  width: 10px;
+}
+.mainpage-promos-section-card-image img {
+  width: 400px;
+}
+.mainpage-promos-section-card-info {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 400px;
+}
+.mainpage-promos-section-card-info h3 {
+  font-family: brabettoheavy;
+  width: 80%;
+  padding-left: 40px;
+  padding-top: 40px;
   margin: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+.mainpage-promos-section-card-info p {
+  font-family: brabettobold;
+  text-align: justify;
+  width: 80%;
+  padding-left: 40px;
+}
+.mainpage-promos-section-card:hover {
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+  box-shadow: 0px 0.7px 2.2px rgba(0, 0, 0, 0.025), 0px 1.7px 5.3px rgba(0, 0, 0, 0.036), 0px 3.3px 10px rgba(0, 0, 0, 0.045), 0px 5.8px 17.9px rgba(0, 0, 0, 0.054), 0px 10.9px 33.4px rgba(0, 0, 0, 0.065), 0px 26px 80px rgba(0, 0, 0, 0.09);
+}/*# sourceMappingURL=index.css.map */

@@ -68,6 +68,9 @@
             flex-wrap: wrap;
             &-right{
                 width: 100%;
+                span{
+                    line-height: 4;
+                }
             }
         }
         &-promos{

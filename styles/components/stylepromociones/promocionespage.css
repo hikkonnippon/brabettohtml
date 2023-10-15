@@ -322,6 +322,9 @@ body {
   .mainpage-cover-right {
     width: 100%;
   }
+  .mainpage-cover-right span {
+    line-height: 4;
+  }
   .mainpage-promos-section {
     display: flex;
     flex-wrap: wrap;

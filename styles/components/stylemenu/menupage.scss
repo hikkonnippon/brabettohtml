@@ -32,16 +32,19 @@
         display: grid;
         align-items: center;
         justify-content: center;
+        
         grid-template-areas: 
         "hamburguesas combos"
         "adicionales adicionales"
         "promociones promociones"
         ;
         gap: 50px;
-        width: 50%;
+        width: 60%;
         a{
             text-decoration: none;
             color: inherit;
+            height: 100%;
+            width: 100%;
         }
         div{
             position: relative;
@@ -120,6 +123,7 @@
             grid-area: promociones;
             display: flex;
             flex-direction: column;
+            height: 100%;
         }
     }
 }

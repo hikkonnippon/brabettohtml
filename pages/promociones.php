@@ -15,7 +15,7 @@
         <h1>PROMOCIONES</h1>
         <div class="mainpage-promos">
             <div class="mainpage-promos-section">
-                <div class="mainpage-promos-section-card">
+                <a href="/pages/promociones/cumpleaños.php"><div class="mainpage-promos-section-card">
                     <div class="mainpage-promos-section-card-image">
                         <img src="../images/cumple.png" alt="">
                     </div>
@@ -23,8 +23,8 @@
                         <h3>Promo Cumpleaños</h3>
                         <p>Por ser tu cumpleaños, te ofrecemos un descuento del 20% en todos nuestros productos.</p>
                     </div>
-                </div>
-                <div class="mainpage-promos-section-card">
+                </div></a>
+                <a href="/pages/promociones/ticket.php"><div class="mainpage-promos-section-card">
                     <div class="mainpage-promos-section-card-image">
                         <img src="../images/ticket.jpg" alt="">
                     </div>
@@ -32,7 +32,7 @@
                         <h3>Ticket de compras</h3>
                         <p>Por 12 compras acumulables en el mes te llevas gratis una Cheese Burger + 1 Porción de papas.</p>
                     </div>
-                </div>
+                </div></a>
             </div>
         </div>
     </main>

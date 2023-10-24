@@ -22,7 +22,7 @@
                         <p class="mainbar-elements-right-delivery-info-phone">947364843</p>
                     </div>
                 </div>
-                <a href="registro"><div class="mainbar-elements-right-user">
+                <a href="/pages/registro/registro.php"><div class="mainbar-elements-right-user">
                     <i class='bx bxs-user' ></i>
                     <span>Ingresa o regístrate</span>  
                 </div></a>
@@ -52,7 +52,9 @@
             <a href="/index.php"><img height="30" src="/images/brabettolenscut-removebg-preview.png" alt="Brabetto"></a>
         </div>
         <div class="mobileheader-mainbar-right">
+            <a href="/pages/registro/registro.php">
             <i class='bx bxs-user bx-md' ></i>
+            </a>
         </div>
     </div>
     <nav class="mobileheader-nav">

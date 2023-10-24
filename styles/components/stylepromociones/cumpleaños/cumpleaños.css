@@ -379,46 +379,45 @@ body {
 }
 @font-face {
   font-family: "brabettoheavy";
-  src: url(../../../resources/BrabettoFontHeavy.ttf);
+  src: url(../../../../resources/BrabettoFontHeavy.ttf);
 }
 @font-face {
   font-family: "brabettobold";
-  src: url(../../../resources/BrabettoFontBold.ttf);
+  src: url(../../../../resources/BrabettoFontBold.ttf);
 }
 .mainpage {
-  background-color: transparent;
-  margin-top: 13%;
-  z-index: 50;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  margin-top: 4%;
 }
-.mainpage-cover {
+.mainpage-promo {
+  background-color: transparent;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 80%;
+}
+.mainpage-promo-info {
+  font-family: brabettobold;
+}
+.mainpage-promo-info h2 {
   font-family: brabettoheavy;
 }
-.mainpage-cover-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.mainpage-promo h1 {
+  font-family: brabettoheavy;
+  border-bottom: 6px solid black;
 }
-.mainpage-cover-right img {
+.mainpage-promo img {
   height: 30%;
 }
-.mainpage-cover-right span {
-  text-align: center;
-  font-size: 36px;
-}
-.mainpage-cover-right a {
+.mainpage-promo a {
   text-decoration: none;
   color: inherit;
   align-items: center;
 }
-.mainpage-cover-right button {
+.mainpage-promo button {
   height: 80px;
   padding: 10px;
   width: 300px;
@@ -438,109 +437,11 @@ body {
   justify-content: center;
   font-family: brabettoheavy;
 }
-.mainpage-cover-right button:hover {
+.mainpage-promo button:hover {
   transition: 284ms;
   padding: 10px 31px;
   transform: translateY(0px);
   background-color: #ffffff;
   color: #F22727;
   border: solid 4px #F22727;
-}
-.mainpage-promos {
-  margin-top: 7.5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  height: 660px;
-}
-.mainpage-promos-title {
-  border-bottom: 6px solid black;
-  font-family: brabettoheavy;
-  font-size: 40px;
-}
-.mainpage-promos-section {
-  display: flex;
-  flex-direction: row;
-  margin-top: 60px;
-  justify-content: space-evenly;
-  width: 100%;
-}
-.mainpage-promos-section a {
-  text-decoration: none;
-  color: inherit;
-  align-items: center;
-}
-.mainpage-promos-section-card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: 40px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.mainpage-promos-section-card-image {
-  height: 50%;
-  width: 10px;
-}
-.mainpage-promos-section-card-image img {
-  width: 400px;
-}
-.mainpage-promos-section-card-info {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  width: 400px;
-}
-.mainpage-promos-section-card-info h3 {
-  font-family: brabettoheavy;
-  width: 80%;
-  padding-left: 40px;
-  padding-top: 40px;
-  margin: 0;
-}
-.mainpage-promos-section-card-info p {
-  font-family: brabettobold;
-  text-align: justify;
-  width: 80%;
-  padding-left: 40px;
-}
-.mainpage-promos-section-card:hover {
-  cursor: pointer;
-  transform: translateY(-20px);
-  transition: transform 0.3s ease;
-  box-shadow: 0px 0.7px 2.2px rgba(0, 0, 0, 0.025), 0px 1.7px 5.3px rgba(0, 0, 0, 0.036), 0px 3.3px 10px rgba(0, 0, 0, 0.045), 0px 5.8px 17.9px rgba(0, 0, 0, 0.054), 0px 10.9px 33.4px rgba(0, 0, 0, 0.065), 0px 26px 80px rgba(0, 0, 0, 0.09);
-}
-.mainpage-app {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-family: brabettoheavy;
-  height: 450px;
-  width: 80%;
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 50px;
-}
-.mainpage-app-left {
-  width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mainpage-app-left img {
-  width: 200px;
-}
-.mainpage-app-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 600px;
-}
-.mainpage-app-right a {
-  text-decoration: none;
-  color: inherit;
-}
-.mainpage-app-right img {
-  width: 200px;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=cumpleaños.css.map */

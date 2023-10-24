@@ -15,7 +15,7 @@
 
 .mainpage{
     background-color: transparent;
-    margin-top: 15%;
+    margin-top: 13%;
     z-index: 50;
     display: flex;
     flex-direction: column;
@@ -38,6 +38,11 @@
             span{
                 text-align: center;
                 font-size: 36px;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+                align-items: center;
             }
             button{
                 height: 80px;
@@ -87,12 +92,17 @@
             margin-top: 60px;
             justify-content: space-evenly;
             width: 100%;
+            a{
+                text-decoration: none;
+                color: inherit;
+                align-items: center;
+            }
             &-card{
                 display: flex;
                 flex-direction: column;
                 overflow: hidden;
                 border-radius: 40px;
-                border: 1px solid rgb(177, 177, 177);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 &-image{
                     height: 50%;
                     width: 10px;

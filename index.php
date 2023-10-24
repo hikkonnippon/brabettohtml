@@ -27,25 +27,25 @@
                     <span>Promociones</span>
                 </div>
                 <div class="mainpage-promos-section">
-                    <div class="mainpage-promos-section-card">
-                        <div class="mainpage-promos-section-card-image">
-                            <img src="./images/cumple.png" alt="">
-                        </div>
-                        <div class="mainpage-promos-section-card-info">
-                            <h3>Promo Cumpleaños</h3>
-                            <p>Por ser tu cumpleaños, te ofrecemos un descuento del 20% en todos nuestros productos.</p>
-                        </div>
+                <a href="/pages/promociones/cumpleaños.php"><div class="mainpage-promos-section-card">
+                    <div class="mainpage-promos-section-card-image">
+                        <img src="../images/cumple.png" alt="">
                     </div>
-                    <div class="mainpage-promos-section-card">
-                        <div class="mainpage-promos-section-card-image">
-                            <img src="./images/ticket.jpg" alt="">
-                        </div>
-                        <div class="mainpage-promos-section-card-info">
-                            <h3>Ticket de compras</h3>
-                            <p>Por 12 compras acumulables en el mes te llevas gratis una Cheese Burger + 1 Porción de papas.</p>
-                        </div>
+                    <div class="mainpage-promos-section-card-info">
+                        <h3>Promo Cumpleaños</h3>
+                        <p>Por ser tu cumpleaños, te ofrecemos un descuento del 20% en todos nuestros productos.</p>
                     </div>
-                </div>
+                </div></a>
+                <a href="/pages/promociones/ticket.php"><div class="mainpage-promos-section-card">
+                    <div class="mainpage-promos-section-card-image">
+                        <img src="../images/ticket.jpg" alt="">
+                    </div>
+                    <div class="mainpage-promos-section-card-info">
+                        <h3>Ticket de compras</h3>
+                        <p>Por 12 compras acumulables en el mes te llevas gratis una Cheese Burger + 1 Porción de papas.</p>
+                    </div>
+                </div></a>
+            </div>
             </div>
             <div class="mainpage-app">
                 <div class="mainpage-app-left">

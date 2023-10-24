@@ -19,18 +19,21 @@
                     <img src="../images/burger2.png" alt="">
                 </div>
                 </a>
-                <div class="mainpage-elements-combos">
+                <a href="./menu/combos.php"><div class="mainpage-elements-combos">
                     <p>Combos</p>
                     <img src="../images/comboburger.png" alt="">
                 </div>
-                <div class="mainpage-elements-adicionales">
+                </a>
+                <a href="./menu/adicionales.php"><div class="mainpage-elements-adicionales">
                     <p>Adicionales</p>
                     <img src="../images/adicionales.jpg" alt="">
                 </div>
-                <div class="mainpage-elements-promos">
+                </a>
+                <a href="./promociones.php"><div class="mainpage-elements-promos">
                     <p>Promociones</p>
                     <img src="../images/promoburger.png" alt="">
                 </div>
+                </a>
             </div>
         </main>
     <!-- FOOTER-->

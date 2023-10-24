@@ -407,11 +407,13 @@ body {
   justify-content: center;
   grid-template-areas: "hamburguesas combos" "adicionales adicionales" "promociones promociones";
   gap: 50px;
-  width: 50%;
+  width: 60%;
 }
 .mainpage-elements a {
   text-decoration: none;
   color: inherit;
+  height: 100%;
+  width: 100%;
 }
 .mainpage-elements div {
   position: relative;
@@ -478,4 +480,5 @@ body {
   grid-area: promociones;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }/*# sourceMappingURL=menupage.css.map */

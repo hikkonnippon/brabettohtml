@@ -7,6 +7,7 @@
         <div class="mainbar-elements">
             <div class="mainbar-elements-left">
                 <a href="/index.php"><img height="42" src="/images/brabettolenscut-removebg-preview.png" alt="Brabetto"></a>
+                <span id="greetingMessage"></span>
             </div>
             <div class="mainbar-elements-right">
                 <div class="mainbar-elements-right-delivery">
@@ -50,6 +51,7 @@
     <div class="mobileheader-mainbar">
         <div class="mobileheader-mainbar-left">
             <a href="/index.php"><img height="30" src="/images/brabettolenscut-removebg-preview.png" alt="Brabetto"></a>
+            <script src="/js/welcome.js"></script>
         </div>
         <div class="mobileheader-mainbar-right">
             <a href="/pages/registro/registro.php">

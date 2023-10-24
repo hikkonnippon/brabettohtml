@@ -39,6 +39,12 @@ header {
   width: 100%;
   padding-right: 10px;
 }
+.mainbar-elements-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
 .mainbar-elements-right {
   display: flex;
   align-items: center;
@@ -294,6 +300,9 @@ body {
   }
   .mobileheader-mainbar .div {
     height: 100%;
+  }
+  .mobileheader-mainbar-left {
+    background-color: #f2762e;
   }
   .mobileheader-mainbar-right a {
     text-decoration: none;

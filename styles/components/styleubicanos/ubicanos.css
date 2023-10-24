@@ -291,6 +291,10 @@ body {
   .mobileheader-mainbar .div {
     height: 100%;
   }
+  .mobileheader-mainbar-right a {
+    text-decoration: none;
+    color: inherit;
+  }
   .mobileheader-nav {
     background-color: white;
     height: 50px;

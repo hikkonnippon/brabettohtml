@@ -35,6 +35,12 @@
             .div{
                 height: 100%;
             }
+            &-right{
+                a{
+                    text-decoration: none;
+                    color: inherit; 
+                }
+            }
         }
         &-nav{
             background-color: white;

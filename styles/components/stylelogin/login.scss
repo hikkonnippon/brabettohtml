@@ -25,7 +25,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 100px;
+        flex-direction: column;
+        gap: 0px;
     }
     h1{
         border-bottom: 6px solid black;
@@ -46,7 +47,7 @@
             align-items: center;
             justify-content: space-between;
             width: 60%;
-            gap: 10px;
+            gap: 30px;
             &-icons{
                 display: flex;
                 justify-content: space-between;

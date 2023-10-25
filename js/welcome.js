@@ -1,10 +1,7 @@
-// Obtén el elemento del span
-const greetingMessage = document.getElementById('greetingMessage');
 
-// Obtiene la hora actual
+const greetingMessage = document.getElementById('greetingMessage');
 const currentHour = new Date().getHours();
 
-// Determina el mensaje de saludo según la hora
 let greeting = '';
 if (currentHour >= 5 && currentHour < 12) {
     greeting = '¡Buenos días #Brabettolover!';
@@ -14,5 +11,4 @@ if (currentHour >= 5 && currentHour < 12) {
     greeting = '¡Buenas noches #Brabettolover!';
 }
 
-// Establece el mensaje en el span
 greetingMessage.textContent = greeting;

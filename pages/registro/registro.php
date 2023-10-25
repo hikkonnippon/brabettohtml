@@ -15,15 +15,7 @@
             <H1>INGRESA</H1>
             <form action autocomplete="off" method="post">
                 <div class="mainpage-login">
-                    <div class="mainpage-login-socialmedia">
-                        <span>Ingresa con:</span>
-                        <div class="mainpage-login-socialmedia-icons">
-                            <a href=""><i class='bx bxl-gmail bx-lg' ></i></a>
-                            <a href=""><i class='bx bxl-facebook-circle bx-lg'></i></a>
-                        </div>
-                    </div>
                     <div class="mainpage-login-field">
-                    <span>O simplemente con un correo electrónico:</span>
                         <div class="mainpage-login-field-input">
                             <label for="">Email <span>*</span></label>
                             <div class="mainpage-login-field-input-email">
@@ -44,6 +36,13 @@
                         </div>
                         <div class="mainpage-login-field-button">
                             <button class="button-login">Ingresar</button>
+                        </div>
+                    </div>
+                    <div class="mainpage-login-socialmedia">
+                        <span>Ingresa con:</span>
+                        <div class="mainpage-login-socialmedia-icons">
+                            <a href=""><i class='bx bxl-gmail bx-lg' ></i></a>
+                            <a href=""><i class='bx bxl-facebook-circle bx-lg'></i></a>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
     <?php include '../../php/headconfig.php' ?>
     <!-- PAGE CONFIG -->
     <title>Brabetto Restaurant - Combos</title>
-    <link rel="stylesheet" href="/styles/components/stylemenu/hamburguesas/hamburguesas.css">
+    <link rel="stylesheet" href="/ProyectV2/styles/components/stylemenu/hamburguesas/hamburguesas.css">
 </head>
 <body>
     <!-- HEADER -->

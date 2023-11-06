@@ -5,7 +5,7 @@
     <?php include '../../php/headconfig.php' ?>
     <!-- PAGE CONFIG -->
     <title>Brabetto Restaurant</title>
-    <link rel="stylesheet" href="/styles/components/stylelogin/login.css">
+    <link rel="stylesheet" href="/ProyectV2/styles/components/stylelogin/login.css">
 </head>
 <body>
     <!-- HEADER -->

@@ -5,7 +5,7 @@
     <?php include '../php/headconfig.php' ?>
     <!-- PAGE CONFIG -->
     <title>Brabetto Restaurant - Menú</title>
-    <link rel="stylesheet" href="/styles/components/stylemenu/menupage.css">
+    <link rel="stylesheet" href="../styles/components/stylemenu/menupage.css">
 </head>
 <body>
     <!-- HEADER -->

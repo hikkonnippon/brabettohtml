@@ -5,7 +5,7 @@
     <?php include './php/headconfig.php' ?>
     <!-- PAGE CONFIG -->
     <title>Brabetto Restaurant</title>
-    <link rel="stylesheet" href="/styles/components/styleindex/index.css">
+    <link rel="stylesheet" href="./styles/components/styleindex/index.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -27,18 +27,18 @@
                     <span>Promociones</span>
                 </div>
                 <div class="mainpage-promos-section">
-                <a href="/pages/promociones/cumpleaños.php"><div class="mainpage-promos-section-card">
+                <a href="./pages/promociones/cumpleaños.php"><div class="mainpage-promos-section-card">
                     <div class="mainpage-promos-section-card-image">
-                        <img src="../images/cumple.png" alt="">
+                        <img src="./images/cumple.png" alt="">
                     </div>
                     <div class="mainpage-promos-section-card-info">
                         <h3>Promo Cumpleaños</h3>
                         <p>Por ser tu cumpleaños, te ofrecemos un descuento del 20% en todos nuestros productos.</p>
                     </div>
                 </div></a>
-                <a href="/pages/promociones/ticket.php"><div class="mainpage-promos-section-card">
+                <a href="./pages/promociones/ticket.php"><div class="mainpage-promos-section-card">
                     <div class="mainpage-promos-section-card-image">
-                        <img src="../images/ticket.jpg" alt="">
+                        <img src="./images/ticket.jpg" alt="">
                     </div>
                     <div class="mainpage-promos-section-card-info">
                         <h3>Ticket de compras</h3>

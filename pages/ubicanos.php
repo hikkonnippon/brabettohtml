@@ -5,7 +5,7 @@
     <?php include '../php/headconfig.php' ?>
     <!-- PAGE CONFIG -->
     <title>Brabetto Restaurant - Ubicanos</title>
-    <link rel="stylesheet" href="/styles/components/styleubicanos/ubicanos.css">
+    <link rel="stylesheet" href="../styles/components/styleubicanos/ubicanos.css">
 </head>
 <body>
     <!-- HEADER -->

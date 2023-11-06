@@ -1,3 +1,7 @@
+<?php
+    include '/xampp/htdocs/ProyectV2/php/configphp/config.php';
+    include '/xampp/htdocs/ProyectV2/php/configphp/connection.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,42 +18,28 @@
     <main class="mainpage">
         <?php include '../../php/pagecomponents/menubar.php' ?>
         <div class="mainpage-menu">
-            <div class="mainpage-menu-section">
+        <div class="mainpage-menu-section">
+        <?php
+            $sentencia=$pdo->prepare("SELECT * FROM `tblcombos`");
+            $sentencia->execute();
+            $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
+            //print_r($listaProductos);
+        ?>
+        <?php foreach($listaProductos as $producto){?>
                 <div class="mainpage-menu-section-elements">
-                    <div class="mainpage-menu-section-elements-img"><img src="../../images/menu/combos/combopara2.jpg" alt=""></div>
+                    <div class="mainpage-menu-section-elements-img"><img src="<?php echo $producto['Imagen'] ?>" alt=""></div>
                     <div class="mainpage-menu-section-elements-info">
-                        <h2>Combo para 2</h2>
-                        <p>2 Cheese Burger + 2 porciones de papas</p>
+                        <h2><?php echo $producto['Nombre'] ?></h2>
+                        <p><?php echo $producto['Descripción'] ?></p>
                         <div class="mainpage-menu-section-elements-info-buy">
-                            <h2>S/ 16.50</h2>
+                            <h2>S/ <?php echo $producto['Precio'] ?></h2>
                             <button>Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="mainpage-menu-section-elements">
-                    <div class="mainpage-menu-section-elements-img"><img src="../../images/menu/combos/combopara3.jpg" alt=""></div>
-                    <div class="mainpage-menu-section-elements-info">
-                        <h2>Combo para 3</h2>
-                        <p>1 Cheese Burger + 1 Royal Burger + 1 Burger a lo pobre + 3 porciones de papas</p>
-                        <div class="mainpage-menu-section-elements-info-buy">
-                            <h2>S/ 33.00</h2>
-                            <button>Agregar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="mainpage-menu-section-elements">
-                    <div class="mainpage-menu-section-elements-img"><img src="../../images/menu/combos/combofam.jpg" alt=""></div>
-                    <div class="mainpage-menu-section-elements-info">
-                        <h2>Combo Familiar</h2>
-                        <p>5 Cheese Burger + 5 porciones de papas</p>
-                        <div class="mainpage-menu-section-elements-info-buy">
-                            <h2>S/ 50.00</h2>
-                            <button>Agregar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <?php }?>
         </div>
+        </div> 
     </main>
     <!-- FOOTER -->
     <?php include '../../php/footer.php'; ?>

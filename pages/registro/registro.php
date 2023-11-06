@@ -31,7 +31,7 @@
                             <button id="toggleButton" type="button"><span class="material-symbols-outlined">
                             visibility
                             </span></button>
-                            <script src="/js/password.js"></script>
+                            <script src="/ProyectV2/js/password.js"></script>
                             </div>
                         </div>
                         <div class="mainpage-login-field-button">

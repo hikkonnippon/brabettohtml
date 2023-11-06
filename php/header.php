@@ -8,6 +8,7 @@
             <div class="mainbar-elements-left">
                 <a href="/ProyectV2/index.php"><img height="42" src="/ProyectV2/images/brabettolenscut-removebg-preview.png" alt="Brabetto"></a>
                 <span id="greetingMessage"></span>
+                <script src="/ProyectV2/js/welcome.js"></script>
             </div>
             <div class="mainbar-elements-right">
                 <div class="mainbar-elements-right-delivery">

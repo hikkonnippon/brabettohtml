@@ -156,27 +156,31 @@
         span{
             font-family: brabettobold;
         }
-        button{
-            height: 50px;
-            padding: 10px;
-            width: 400px;
-            color: #fff;
-            background-color: var(--orangebb);
-            border: solid #fff 2px;
-            box-shadow: none;
-            border-radius: 50px;
-            transition : 284ms;
-            transform: translateY(0);
-            cursor: pointer;
-            font-family: brabettobold;
+        a{
+            text-decoration: none;
+            color: inherit;
+            span{
+                height: 50px;
+                padding: 10px;
+                width: 400px;
+                color: #fff;
+                background-color: var(--orangebb);
+                border: solid #fff 2px;
+                box-shadow: none;
+                border-radius: 50px;
+                transition : 284ms;
+                transform: translateY(0);
+                cursor: pointer;
+                font-family: brabettobold;
+                }
+            span:hover{
+                transition : 284ms;
+                padding: 10px 31px;
+                transform : translateY(-0px);
+                background-color: #fff;
+                color: var(--orangebb);
+                border: solid 2px var(--orangebb);
             }
-        button:hover{
-            transition : 284ms;
-            padding: 10px 31px;
-            transform : translateY(-0px);
-            background-color: #fff;
-            color: var(--orangebb);
-            border: solid 2px var(--orangebb);
         }
     }
 }

@@ -1,3 +1,9 @@
+<?php
+// Inicia la sesión si no está iniciada
+if (!isset($_SESSION)) {
+    session_start();
+}
+?>
 <header>
     <div class="call_line"> <!-- ENCABEZADO LLAMAR -->
         <i class='bx bxs-phone bx-sm' ></i> 
@@ -24,9 +30,25 @@
                         <p class="mainbar-elements-right-delivery-info-phone">947364843</p>
                     </div>
                 </div>
-                <a href="/ProyectV2/pages/registro/registro.php"><div class="mainbar-elements-right-user">
-                    <i class='bx bxs-user' ></i>
-                    <span>Ingresa o regístrate</span>  
+                <a href="/ProyectV2/pages/registerlogin/login.php"><div class="mainbar-elements-right-user">
+                <?php
+                // Verifica si hay información de usuario en la sesión
+                    if (isset($_SESSION['usuario'])) {
+                        // Si hay información, muestra el nombre y apellido con un enlace a userinfo.php
+                        echo '<a href="/ProyectV2/pages/registerlogin/userinfo.php">
+                                <i class="bx bxs-user bx-sm"></i>
+                                <span>' . $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellido'] . '</span>
+                            </a>';
+                    } else {
+                        // Si no hay información, muestra el enlace para iniciar sesión o registrarse
+                        echo '<a href="/ProyectV2/pages/registerlogin/login.php">
+                                <div class="mainbar-elements-right-user">
+                                    <i class="bx bxs-user"></i>
+                                    <span>Ingresa o regístrate</span>  
+                                </div>
+                            </a>';
+                    }
+                ?>
                 </div></a>
             </div>
         </div>
@@ -39,7 +61,7 @@
             <a href="/ProyectV2/pages/ubicanos.php"><span>UBÍCANOS</span></a>
         </div>
         <div class="navi-cart">
-            <button class="navi-cart-button"><i class='bx bx-cart bx-md'></i></button>
+            <a href="/ProyectV2/pages/shoppingcart.php"><button class="navi-cart-button"><i class='bx bx-cart bx-md'></i></button></a>
         </div>
     </nav>
 </header>

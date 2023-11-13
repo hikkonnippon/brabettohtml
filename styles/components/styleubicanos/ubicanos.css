@@ -135,6 +135,10 @@ header {
   margin: 0;
   padding-left: 50px;
 }
+.navi-cart a {
+  text-decoration: none;
+  color: inherit;
+}
 .navi-cart-button {
   margin: auto;
   height: 40px;

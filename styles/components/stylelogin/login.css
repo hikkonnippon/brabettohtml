@@ -135,6 +135,10 @@ header {
   margin: 0;
   padding-left: 50px;
 }
+.navi-cart a {
+  text-decoration: none;
+  color: inherit;
+}
 .navi-cart-button {
   margin: auto;
   height: 40px;
@@ -539,7 +543,11 @@ body {
 .mainpage-register span {
   font-family: brabettobold;
 }
-.mainpage-register button {
+.mainpage-register a {
+  text-decoration: none;
+  color: inherit;
+}
+.mainpage-register a span {
   height: 50px;
   padding: 10px;
   width: 400px;
@@ -553,7 +561,7 @@ body {
   cursor: pointer;
   font-family: brabettobold;
 }
-.mainpage-register button:hover {
+.mainpage-register a span:hover {
   transition: 284ms;
   padding: 10px 31px;
   transform: translateY(0px);

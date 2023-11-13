@@ -4,11 +4,11 @@ const currentHour = new Date().getHours();
 
 let greeting = '';
 if (currentHour >= 5 && currentHour < 12) {
-    greeting = '¡Buenos días #Brabettolover!';
+    greeting = '¡Buenos días';
 } else if (currentHour >= 12 && currentHour < 19) {
-    greeting = '¡Buenas tardes #Brabettolover!';
+    greeting = '¡Buenas tardes';
 } else {
-    greeting = '¡Buenas noches #Brabettolover!';
+    greeting = '¡Buenas noches';
 }
 
 greetingMessage.textContent = greeting;

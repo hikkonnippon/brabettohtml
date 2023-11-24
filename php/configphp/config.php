@@ -1,14 +1,15 @@
 <?php
 
-    define("KEY","brabettodev");
-    define("COD","AES-128-ECB");
-
-
     define("SERVER","localhost");
     define("USER","root");
     define("PASSWORD","");
     define("BD","brabetto");
 
+
+
+    define("KEY","brabettodev");
+    define("COD","AES-128-ECB");
+    
     if (!defined('KEY')) {
         define("KEY", "brabettodev");
     }

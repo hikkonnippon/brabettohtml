@@ -1,6 +1,8 @@
 <?php
     include '/xampp/htdocs/ProyectV2/php/configphp/config.php';
     include '/xampp/htdocs/ProyectV2/php/configphp/connection.php';
+
+    
     include '/xampp/htdocs/ProyectV2/php/phplogic/shopping.php';
 ?>
 <!DOCTYPE html>

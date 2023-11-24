@@ -14,7 +14,7 @@ if (isset($_POST['login'])) {
         // Inicia la sesión
         session_start();
 
-        // Guarda información del usuario en la sesión (puedes almacenar más información si es necesario)
+        // Guarda información del usuario en la sesión
         $_SESSION['usuario'] = [
             'id' => $usuario['ID'],
             'nombre' => $usuario['Nombres'],
@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
             'correo' => $usuario['Correo']
         ];
 
-        // Redirige a la página de inicio o a donde desees
+        // Redirige a la página de inicio
         header("Location: /ProyectV2/index.php");
         exit();
     } else {

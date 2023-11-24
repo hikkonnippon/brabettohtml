@@ -3,7 +3,11 @@
 if (!isset($_SESSION)) {
     session_start();
 }
+
+// Obtiene el nombre de usuario de la sesión PHP
+$usuarioNombre = isset($_SESSION['usuario']) ? $_SESSION['usuario']['nombre'] : '';
 ?>
+
 <header>
     <div class="call_line"> <!-- ENCABEZADO LLAMAR -->
         <i class='bx bxs-phone bx-sm' ></i> 
@@ -13,8 +17,26 @@ if (!isset($_SESSION)) {
         <div class="mainbar-elements">
             <div class="mainbar-elements-left">
                 <a href="/ProyectV2/index.php"><img height="42" src="/ProyectV2/images/brabettolenscut-removebg-preview.png" alt="Brabetto"></a>
-                <span id="greetingMessage"></span>
-                <script src="/ProyectV2/js/welcome.js"></script>
+                <span id="greetingMessage" data-username="<?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario']['nombre'] : ''; ?>"></span>
+                        <script>
+                            const greetingMessage = document.getElementById('greetingMessage');
+                            const currentHour = new Date().getHours();
+
+                            let greeting = '';
+                            if (currentHour >= 5 && currentHour < 12) {
+                                greeting = '¡Buenos días';
+                            } else if (currentHour >= 12 && currentHour < 19) {
+                                greeting = '¡Buenas tardes';
+                            } else {
+                                greeting = '¡Buenas noches';
+                            }
+
+                            // Obtener el nombre del usuario desde el atributo data-username
+                            const usuarioNombre = greetingMessage.getAttribute('data-username');
+
+                            // Mostrar el saludo con el nombre del usuario o '#BrabettoLover'
+                            greetingMessage.textContent = `${greeting}, ${usuarioNombre || '#BrabettoLover'}!`;
+                        </script>
             </div>
             <div class="mainbar-elements-right">
                 <div class="mainbar-elements-right-delivery">
@@ -74,7 +96,6 @@ if (!isset($_SESSION)) {
     <div class="mobileheader-mainbar">
         <div class="mobileheader-mainbar-left">
             <a href="/ProyectV2/index.php"><img height="30" src="/ProyectV2/images/brabettolenscut-removebg-preview.png" alt="Brabetto"></a>
-            <script src="/js/welcome.js"></script>
         </div>
         <div class="mobileheader-mainbar-right">
             <a href="/pages/registro/registro.php">

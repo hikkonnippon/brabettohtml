@@ -1,3 +1,4 @@
+
 <?php
     session_start();
 
@@ -8,6 +9,14 @@
         switch($_POST['btnAccion']){
 
             case 'Agregar':
+
+                // Verificar si hay una sesión de usuario
+                if (!isset($_SESSION['usuario'])) {
+                    // No hay una sesión de usuario, redirige a la página de inicio de sesión
+                    header("Location: /ProyectV2/pages/registerlogin/login.php");
+                    exit();
+                }
+
 
                 if(is_numeric( openssl_decrypt($_POST['id'],COD,KEY))){
                     $ID=openssl_decrypt($_POST['id'],COD,KEY);
@@ -37,35 +46,44 @@
                     $mensaje.=" X precio Incorrecto".$Precio."<br/>";
                     break;}
 
-            if(!isset($_SESSION['SHOPPING'])){
-                $producto=array(
-                    'ID'=>$ID,
-                    'NOMBRE'=>$Nombre,
-                    'CANTIDAD'=>$Cantidad,
-                    'PRECIO'=>$Precio,
-                );
-                $_SESSION['SHOPPING'][0]=$producto;
-            }else{
-                $numeroProductos=count($_SESSION['SHOPPING']);
-                $producto=array(
-                    'ID'=>$ID,
-                    'NOMBRE'=>$Nombre,
-                    'CANTIDAD'=>$Cantidad,
-                    'PRECIO'=>$Precio,
-                );
-
-                $_SESSION['SHOPPING'][$numeroProductos]=$producto;
+            
+            // Verificar si el producto ya está en el carrito
+            $producto_existente = false;
+            $index_existente = -1;
+            if (isset($_SESSION['SHOPPING']) && is_array($_SESSION['SHOPPING'])) {
+                foreach ($_SESSION['SHOPPING'] as $index => $producto_existente) {
+                    if ($producto_existente['ID'] == $ID) {
+                        // El producto ya está en el carrito, actualiza la cantidad
+                        $index_existente = $index;
+                        break;
+                    }
+                }
             }
-            $mensaje= print_r($_SESSION,true);
 
-            break; 
+            // Si el producto está en el carrito, actualiza la cantidad
+            if ($index_existente !== -1) {
+                $_SESSION['SHOPPING'][$index_existente]['CANTIDAD'] += $Cantidad;
+            } else {
+                // Si el producto no está en el carrito, agrégalo
+                $producto = array(
+                    'ID' => $ID,
+                    'NOMBRE' => $Nombre,
+                    'CANTIDAD' => $Cantidad,
+                    'PRECIO' => $Precio,
+                );
+                $_SESSION['SHOPPING'][] = $producto;
+            }
+
+            $mensaje = print_r($_SESSION, true);
+
+            break;
             
             case "Eliminar":
                 if(is_numeric( openssl_decrypt($_POST['id'],COD,KEY))){
                     $ID=openssl_decrypt($_POST['id'],COD,KEY);
                     foreach ($_SESSION['SHOPPING'] as $index=>$producto){
                         if($producto['ID']==$ID){
-                            unset($_SESSION['SHOPPING']['$index']);
+                            unset($_SESSION['SHOPPING'][$index]);
                         }
                     }
                 }

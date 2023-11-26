@@ -1,3 +1,10 @@
+<?php
+    include '/xampp/htdocs/ProyectV2/php/configphp/config.php';
+    include '/xampp/htdocs/ProyectV2/php/configphp/connection.php';
+
+    
+    include '/xampp/htdocs/ProyectV2/php/phplogic/shopping.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,10 +37,12 @@
                     <td ><?php echo $producto['CANTIDAD'] ?></td>
                     <td ><?php echo $producto['PRECIO'] ?></td>
                     <td ><?php echo number_format($producto['PRECIO']*$producto['CANTIDAD'],2); ?></td>
-
+                    <td >
                     <form action="" method="post">
-                        <td ><button class="btnEliminar" type="submit" name="btnAccion" value="Eliminar">Eliminar</button></td>
+                        <input type="hidden" name="id" id="id" value="<?php echo openssl_encrypt($producto['ID'],COD,KEY); ?>">
+                        <button type="submit" name="btnAccion" value="Eliminar">Eliminar</button>
                     </form>
+                    </td>
                 </tr>
                 <?php $total=$total+($producto['PRECIO']*$producto['CANTIDAD']); ?>
                 <?php } ?>
@@ -41,6 +50,15 @@
                     <td colspan="3" align="right">Total</td>
                     <td align="right"><span>S/ <?php echo number_format($total, 2) ?></span></td>
                     <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <form action="pages\pay.php">
+                            <button class="paybutton" type="submit" value="proceder">
+                                Proceder al pago
+                            </button>
+                        </form>
+                    </td>
                 </tr>
             </tbody>
         </table>

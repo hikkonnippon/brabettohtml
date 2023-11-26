@@ -4,6 +4,21 @@
 
     
     include '/xampp/htdocs/ProyectV2/php/phplogic/shopping.php';
+    
+    // Inicia la sesión si no está iniciada
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
+    // Verificar si se está intentando agregar un producto
+    if (isset($_POST['btnAccion']) && $_POST['btnAccion'] == 'Agregar') {
+        // Verificar si hay una sesión de usuario
+        if (!isset($_SESSION['usuario'])) {
+            // No hay una sesión de usuario, redirige a la página de inicio de sesión
+            header("Location: /ProyectV2/pages/registerlogin/login.php");
+            exit();
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

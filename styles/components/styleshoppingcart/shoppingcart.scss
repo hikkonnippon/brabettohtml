@@ -1,0 +1,46 @@
+@import "../header";
+@import "../footer";
+@import "../../config/variables";
+@import "../../base/base";
+@import "../breakpoint";
+
+@font-face {
+    font-family:"brabettoheavy";
+    src:url(../../../resources/BrabettoFontHeavy.ttf);
+}
+@font-face {
+    font-family:"brabettobold";
+    src:url(../../../resources/BrabettoFontBold.ttf);
+}
+
+.mainpage {
+    background-color:transparent;
+    margin-top: 13%;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    h1{
+        border-bottom: 6px solid black;
+        font-family: brabettoheavy;
+        font-size: 40px;
+        align-items: center;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    &-content{
+        width: 70%;
+        height: 100%;
+    }
+    th{
+        height: 50px;
+    }
+    td {
+        height: 100px;
+    }
+}

@@ -11,7 +11,7 @@ $usuarioNombre = isset($_SESSION['usuario']) ? $_SESSION['usuario']['nombre'] : 
 <header>
     <div class="call_line"> <!-- ENCABEZADO LLAMAR -->
         <i class='bx bxs-phone bx-sm' ></i> 
-        <span>Llamanos al 947 364 843</span>
+        <span>Haz tu pedido al 947 364 843</span>
     </div>   
     <div class="mainbar"> <!-- ENCABEZADO PRINCIPAL -->
         <div class="mainbar-elements">
@@ -39,19 +39,6 @@ $usuarioNombre = isset($_SESSION['usuario']) ? $_SESSION['usuario']['nombre'] : 
                         </script>
             </div>
             <div class="mainbar-elements-right">
-                <div class="mainbar-elements-right-delivery">
-                    <i class='bx bxs-phone bx-md' ></i>
-                    <div class="mainbar-elements-right-delivery-info">
-                        <div class="mainbar-elements-right-delivery-info-city">  
-                        <span> Delivery </span>
-                        <select>
-                            <option value="lima">LIMA</option>
-                            <option value="callao">CALLAO</option>
-                        </select>
-                        </div>
-                        <p class="mainbar-elements-right-delivery-info-phone">947364843</p>
-                    </div>
-                </div>
                 <a href="/ProyectV2/pages/registerlogin/login.php"><div class="mainbar-elements-right-user">
                 <?php
                 // Verifica si hay información de usuario en la sesión
@@ -83,7 +70,17 @@ $usuarioNombre = isset($_SESSION['usuario']) ? $_SESSION['usuario']['nombre'] : 
             <a href="/ProyectV2/pages/ubicanos.php"><span>UBÍCANOS</span></a>
         </div>
         <div class="navi-cart">
-            <a href="/ProyectV2/pages/shoppingcart.php"><button class="navi-cart-button"><i class='bx bx-cart bx-md'></i></button></a>
+            <a href="/ProyectV2/pages/shoppingcart.php">
+                <button class="navi-cart-button">
+                    <i class='bx bx-cart bx-md'></i>
+                    <span>
+                        <?php
+                        echo (empty($_SESSION['SHOPPING']))?0:count($_SESSION['SHOPPING']);
+                        ?>
+                    </span>
+                </button>
+                
+            </a>
         </div>
     </nav>
 </header>

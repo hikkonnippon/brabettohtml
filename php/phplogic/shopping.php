@@ -58,7 +58,21 @@
             }
             $mensaje= print_r($_SESSION,true);
 
-            break;   
+            break; 
+            
+            case "Eliminar":
+                if(is_numeric( openssl_decrypt($_POST['id'],COD,KEY))){
+                    $ID=openssl_decrypt($_POST['id'],COD,KEY);
+                    foreach ($_SESSION['SHOPPING'] as $index=>$producto){
+                        if($producto['ID']==$ID){
+                            unset($_SESSION['SHOPPING']['$index']);
+                        }
+                    }
+                }
+                else{
+                $mensaje.=" X ID Incorrecto".$ID."<br/>";
+                break;}
+            break;    
         }
     }
 ?>

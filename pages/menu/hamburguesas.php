@@ -42,7 +42,7 @@
         <div class="mainpage-menu-section">
 
         <?php
-            $sentencia=$pdo->prepare("SELECT * FROM `tblhamburguesas`");
+            $sentencia=$pdo->prepare("SELECT * FROM `tblproductos`");
             $sentencia->execute();
             $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
             //print_r($listaProductos);

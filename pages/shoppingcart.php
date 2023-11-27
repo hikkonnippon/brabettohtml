@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                     <td colspan="5">
-                        <form action="pages\pay.php">
+                        <form action="./pay.php">
                             <button class="paybutton" type="submit" value="proceder">
                                 Proceder al pago
                             </button>
